@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: rgb(107, 176, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    margin-left: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#theme-change{
+    width: max-content;
+    height: max-content;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(179, 228, 228);
+}
+
+.form-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 1px solid rgb(228, 215, 215);
+    height: 550px;
+    width: 400px;
+    text-align: center;
+    background-color: rgb(216, 214, 212);
+    border-radius: 5px;
+}
+
+.form-wrapper h2{
+    color: rgb(7, 123, 212);
+}
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-up-form input{
+    width: 90%;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 18px;
+    text-indent: 10px;
+}
+
+
+
+#sign-up-btn{
+    width: 90%;
+    height: 40px;
+    background-color: rgb(7, 123, 212);
+    border: none;
+    cursor: pointer;
+}
+
+.captcha-box{
+    width: 90%;
+    display: flex;
+}
+
+.captcha-show{
+    background-color: silver;
+    width: 90%;
+    padding: 5px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+#refresh-captcha{
+    width: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 450px){
+    .form-wrapper{
+        width: 100%;
+    }
+}
